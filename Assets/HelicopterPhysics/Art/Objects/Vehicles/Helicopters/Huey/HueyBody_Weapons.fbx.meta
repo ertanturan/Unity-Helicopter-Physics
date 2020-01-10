@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 31162594937553a4f93760f8142cd1dd
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Gatling_Gun
+    100002: Gatling_Gun_Base
+    100004: Gatling_Gun_Bullets
+    100006: Gatling_Gun_Cannon
+    100008: Huey_MainPropeller
+    100010: Hueybody
+    100012: //RootNode
+    100014: HueyInterior
+    100016: HueyPropeller
+    100018: Machine_gun1
+    100020: Machine_gun1_Base
+    100022: Nose_Gun
+    100024: Nose_Gun_Base
+    100026: Rocket
+    100028: Rocket_Bullet.001
+    100030: Rocket_Bullet.002
+    100032: Rocket_Bullet.003
+    100034: Rocket_Bullet.004
+    100036: Rocket_Bullet.005
+    100038: Rocket_Bullet.006
+    100040: Rocket_Bullet.007
+    100042: Side_gunner
+    100044: Side_gunner_Cannon
+    400000: Gatling_Gun
+    400002: Gatling_Gun_Base
+    400004: Gatling_Gun_Bullets
+    400006: Gatling_Gun_Cannon
+    400008: Huey_MainPropeller
+    400010: Hueybody
+    400012: //RootNode
+    400014: HueyInterior
+    400016: HueyPropeller
+    400018: Machine_gun1
+    400020: Machine_gun1_Base
+    400022: Nose_Gun
+    400024: Nose_Gun_Base
+    400026: Rocket
+    400028: Rocket_Bullet.001
+    400030: Rocket_Bullet.002
+    400032: Rocket_Bullet.003
+    400034: Rocket_Bullet.004
+    400036: Rocket_Bullet.005
+    400038: Rocket_Bullet.006
+    400040: Rocket_Bullet.007
+    400042: Side_gunner
+    400044: Side_gunner_Cannon
+    2100000: Rocket_MAT
+    2100002: Gatling_Gun_MAT
+    2100004: Side_gunner
+    2100006: Nose_Gun_MAT
+    2100008: Machine_gun1_MAT
+    2100010: HueyPropeller_MAT
+    2100012: HueyInterior_MAT
+    2100014: Hueybody_MAT
+    2300000: Gatling_Gun
+    2300002: Gatling_Gun_Base
+    2300004: Gatling_Gun_Bullets
+    2300006: Gatling_Gun_Cannon
+    2300008: Huey_MainPropeller
+    2300010: Hueybody
+    2300012: HueyInterior
+    2300014: HueyPropeller
+    2300016: Machine_gun1
+    2300018: Machine_gun1_Base
+    2300020: Nose_Gun
+    2300022: Nose_Gun_Base
+    2300024: Rocket
+    2300026: Rocket_Bullet.001
+    2300028: Rocket_Bullet.002
+    2300030: Rocket_Bullet.003
+    2300032: Rocket_Bullet.004
+    2300034: Rocket_Bullet.005
+    2300036: Rocket_Bullet.006
+    2300038: Rocket_Bullet.007
+    2300040: Side_gunner
+    2300042: Side_gunner_Cannon
+    3300000: Gatling_Gun
+    3300002: Gatling_Gun_Base
+    3300004: Gatling_Gun_Bullets
+    3300006: Gatling_Gun_Cannon
+    3300008: Huey_MainPropeller
+    3300010: Hueybody
+    3300012: HueyInterior
+    3300014: HueyPropeller
+    3300016: Machine_gun1
+    3300018: Machine_gun1_Base
+    3300020: Nose_Gun
+    3300022: Nose_Gun_Base
+    3300024: Rocket
+    3300026: Rocket_Bullet.001
+    3300028: Rocket_Bullet.002
+    3300030: Rocket_Bullet.003
+    3300032: Rocket_Bullet.004
+    3300034: Rocket_Bullet.005
+    3300036: Rocket_Bullet.006
+    3300038: Rocket_Bullet.007
+    3300040: Side_gunner
+    3300042: Side_gunner_Cannon
+    4300000: Rocket_Bullet.006
+    4300002: Rocket_Bullet.005
+    4300004: Rocket_Bullet.004
+    4300006: Rocket_Bullet.003
+    4300008: Rocket_Bullet.002
+    4300010: Rocket_Bullet.001
+    4300012: Rocket_Bullet.007
+    4300014: Gatling_Gun_Cannon
+    4300016: Side_gunner_Cannon
+    4300018: Nose_Gun_Base
+    4300020: Gatling_Gun_Bullets
+    4300022: Gatling_Gun_Base
+    4300024: Machine_gun1_Base
+    4300026: Huey_MainPropeller
+    4300028: Side_gunner
+    4300030: Nose_Gun
+    4300032: Rocket
+    4300034: Machine_gun1
+    4300036: Gatling_Gun
+    4300038: HueyInterior
+    4300040: HueyPropeller
+    4300042: Hueybody
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gatling_Gun_MAT
+    second: {fileID: 2100000, guid: d7bc2c359893f3542bb37a65ef1be485, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HueyInterior_MAT
+    second: {fileID: 2100000, guid: 9e2601a26c900d5488f92584554453fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HueyPropeller_MAT
+    second: {fileID: 2100000, guid: a301064d91cdb1d4baa2187cff97cfc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hueybody_MAT
+    second: {fileID: 2100000, guid: 5e90d6b4674efae4f84256bf34a8eebb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Machine_gun1_MAT
+    second: {fileID: 2100000, guid: 7913348b0c4d78443b7c074e145808df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nose_Gun_MAT
+    second: {fileID: 2100000, guid: 28e269f2dd780c0409fb65c3f3f764b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rocket_MAT
+    second: {fileID: 2100000, guid: 8ff2978ee2f0e5d4e863a4dd63e6d1e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Side_gunner
+    second: {fileID: 2100000, guid: 471ea6b11c2dee14e8848f1fdfaf53e7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
