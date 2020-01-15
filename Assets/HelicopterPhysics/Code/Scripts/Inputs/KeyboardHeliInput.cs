@@ -29,17 +29,17 @@ namespace HelicopterPhysics.Inputs
 
         private void HandleThrottle()
         {
-            _throttleInput = Vertical;
+            _throttleInput = Input.GetAxis("Throttle");
         }
 
         private void HandlePedal()
         {
-            _pedalInput = Horizontal;
+            _collectiveInput = Input.GetAxis("Collective");
         }
 
         private void HandleCollective()
         {
-
+            _pedalInput = Input.GetAxis("Pedal");
         }
 
 
