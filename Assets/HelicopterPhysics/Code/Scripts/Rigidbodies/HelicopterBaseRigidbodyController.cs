@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HelicopterPhysics.Gameplay
+namespace HelicopterPhysics.Physics
 {
     public class HelicopterBaseRigidbodyController : MonoBehaviour
     {

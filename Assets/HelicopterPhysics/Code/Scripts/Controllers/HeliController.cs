@@ -1,5 +1,7 @@
 ﻿using HelicopterPhysics.Inputs;
+using HelicopterPhysics.Physics;
 using UnityEngine;
+
 namespace HelicopterPhysics.Gameplay
 {
     [RequireComponent(typeof(InputController))]
