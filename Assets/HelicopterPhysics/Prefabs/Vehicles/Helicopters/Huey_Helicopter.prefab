@@ -2009,6 +2009,7 @@ GameObject:
   - component: {fileID: 4883451441853028345}
   - component: {fileID: 5207640454373749206}
   - component: {fileID: 5498550068502011883}
+  - component: {fileID: 406254176}
   m_Layer: 0
   m_Name: Huey_Helicopter
   m_TagString: Untagged
@@ -2087,6 +2088,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Input: 0
+--- !u!114 &406254176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883451440574659255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb05a003f7d7e6e4d9ac7091e6c5e2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4883451440782953627
 GameObject:
   m_ObjectHideFlags: 0

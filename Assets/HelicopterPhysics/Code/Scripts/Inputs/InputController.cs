@@ -20,6 +20,7 @@ namespace HelicopterPhysics.Inputs
             _inputs = GetComponents<BaseHeliInput>().ToList();
             _xboxController = GetComponent<XboxHeliInput>();
             _pcController = GetComponent<KeyboardHeliInput>();
+
             SetInputType();
         }
 
