@@ -4,17 +4,6 @@ namespace HelicopterPhysics.Inputs
     public class KeyboardHeliInput : BaseHeliInput
     {
 
-        public float ThrottleInput { get { return _throttleInput; } }
-        public float CollectiveInput { get { return _collectiveInput; } }
-        public Vector2 CyclicInput { get { return _cyclicInput; } }
-        public float PedalInput { get { return _pedalInput; } }
-
-
-        private float _throttleInput = 0f;
-        private float _collectiveInput = 0f;
-        private Vector2 _cyclicInput = Vector2.zero;
-        private float _pedalInput = 0f;
-
         protected override void HandleInput()
         {
             base.HandleInput();
@@ -27,26 +16,32 @@ namespace HelicopterPhysics.Inputs
         }
 
 
-        private void HandleThrottle()
+        protected override void HandleThrottle()
         {
-            _throttleInput = Input.GetAxis("Throttle");
+            base.HandleThrottle();
+            ThrottleInput = Input.GetAxis("Throttle");
         }
 
-        private void HandlePedal()
+        protected override void HandlePedal()
         {
-            _collectiveInput = Input.GetAxis("Collective");
+            base.HandlePedal();
+            CollectiveInput = Input.GetAxis("Collective");
         }
 
-        private void HandleCollective()
+        protected override void HandleCollective()
         {
-            _pedalInput = Input.GetAxis("Pedal");
+            base.HandleCollective();
+
+            PedalInput = Input.GetAxis("Pedal");
         }
 
 
-        private void HandleCyclic()
+        protected override void HandleCyclic()
         {
-            _cyclicInput.y = Vertical;
-            _cyclicInput.x = Horizontal;
+            base.HandleCyclic();
+            Vector2 temp = new Vector2(Horizontal, Vertical);
+
+            CyclicInput = temp;
         }
 
     }
