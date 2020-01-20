@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Weight : MonoBehaviour
 {
@@ -19,7 +17,7 @@ public class Weight : MonoBehaviour
 
     #region Builtin Methods
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         float finalKG = weightInLbs * lbsToKg;
         weight = finalKG;
@@ -29,11 +27,11 @@ public class Weight : MonoBehaviour
             rb.mass = finalKG;
         }
     }
-	
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    // Update is called once per frame
+    void FixedUpdate()
     {
-		
-	}
+
+    }
     #endregion
 }

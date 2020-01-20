@@ -9,8 +9,9 @@ namespace HelicopterPhysics.Gameplay
     {
         private InputController _inputController;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             _inputController = GetComponent<InputController>();
         }
 

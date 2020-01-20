@@ -389,6 +389,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1603179565206259556}
   - component: {fileID: 5754521871935094725}
+  - component: {fileID: 317473587}
+  - component: {fileID: 317473588}
+  - component: {fileID: 317473589}
+  - component: {fileID: 317473590}
   m_Layer: 0
   m_Name: R22_Helicopter_V2
   m_TagString: Untagged
@@ -430,6 +434,58 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &317473587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603179565206690564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb05a003f7d7e6e4d9ac7091e6c5e2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  COG: {fileID: 6477170726094518253}
+  WeightInLbs: 10
+  Weight: 0
+--- !u!114 &317473588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603179565206690564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c62b6cc1d60d049a5ae4e2f1d9ede3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Input: 0
+--- !u!114 &317473589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603179565206690564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a597804f23d126e409e4c6b7e45e9f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &317473590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603179565206690564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b2ada5a873d9d14e9fdc7934860c0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603179565206690566
 GameObject:
   m_ObjectHideFlags: 0
