@@ -4,18 +4,6 @@ namespace HelicopterPhysics.Inputs
     public class KeyboardHeliInput : BaseHeliInput
     {
 
-        protected override void HandleInput()
-        {
-            base.HandleInput();
-
-            HandleThrottle();
-            HandleCollective();
-            HandleCyclic();
-            HandlePedal();
-
-        }
-
-
         protected override void HandleThrottle()
         {
             base.HandleThrottle();

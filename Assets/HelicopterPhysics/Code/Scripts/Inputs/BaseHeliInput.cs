@@ -59,29 +59,27 @@ namespace HelicopterPhysics.Inputs
         {
             _Vertical = Input.GetAxis("Vertical");
             _Horizontal = Input.GetAxis("Horizontal");
+
+            HandleThrottle();
+            HandleCollective();
+            HandleCyclic();
+            HandlePedal();
+            ClampInputs();
         }
 
 
 
-        protected virtual void HandleThrottle()
+        protected virtual void HandleThrottle() { }
+        protected virtual void HandlePedal() { }
+        protected virtual void HandleCollective() { }
+        protected virtual void HandleCyclic() { }
+
+        private void ClampInputs()
         {
-
-        }
-
-        protected virtual void HandlePedal()
-        {
-        }
-
-
-        protected virtual void HandleCollective()
-        {
-
-        }
-
-
-        protected virtual void HandleCyclic()
-        {
-
+            ThrottleInput = Mathf.Clamp(ThrottleInput, -1f, 1f);
+            CollectiveInput = Mathf.Clamp(CollectiveInput, -1f, 1f);
+            CyclicInput = Vector2.ClampMagnitude(CyclicInput, 1);
+            PedalInput = Mathf.Clamp(PedalInput, -1f, 1f);
         }
 
     }
