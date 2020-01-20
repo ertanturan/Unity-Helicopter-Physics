@@ -15,24 +15,20 @@ namespace HelicopterPhysics.Inputs
             get { return _collectiveInput; }
             set { _collectiveInput = value; }
         }
-
         public Vector2 CyclicInput
         {
             get { return _cyclicInput; }
             set { _cyclicInput = value; }
         }
-
         public float PedalInput
         {
             get { return _pedalInput; }
             set { _pedalInput = value; }
         }
-
         public float Vertical
         {
             get { return _Vertical; }
         }
-
         public float Horizontal
         {
             get { return _Horizontal; }
@@ -47,8 +43,6 @@ namespace HelicopterPhysics.Inputs
 
         private float _Vertical = 0f;
         private float _Horizontal = 0f;
-
-
 
         private void Update()
         {
