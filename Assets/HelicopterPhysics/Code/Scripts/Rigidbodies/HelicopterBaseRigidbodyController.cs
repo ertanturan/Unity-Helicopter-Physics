@@ -2,6 +2,7 @@
 
 namespace HelicopterPhysics.Physics
 {
+    [RequireComponent(typeof(Rigidbody))]
     public class HelicopterBaseRigidbodyController : MonoBehaviour
     {
 
