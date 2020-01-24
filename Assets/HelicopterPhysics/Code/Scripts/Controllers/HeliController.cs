@@ -1,5 +1,6 @@
 ﻿using HelicopterPhysics.Inputs;
 using HelicopterPhysics.Physics;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace HelicopterPhysics.Gameplay
@@ -9,6 +10,7 @@ namespace HelicopterPhysics.Gameplay
     {
         [Header("Helicopter Properties")]
         private InputController _inputController;
+        public List<HeliEngine> Engines = new List<HeliEngine>();
 
         protected override void Awake()
         {

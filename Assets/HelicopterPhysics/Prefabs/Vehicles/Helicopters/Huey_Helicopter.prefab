@@ -99,6 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1079024628}
+  - component: {fileID: 1698967893695878840}
   m_Layer: 0
   m_Name: Main Engine
   m_TagString: Untagged
@@ -120,6 +121,21 @@ Transform:
   m_Father: {fileID: 1761802253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1698967893695878840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079024627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cba148761d568449af0844b7e25d13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHP: 140
+  MaxRPM: 2700
+  PowerDelay: 2
 --- !u!1 &1121730716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,6 +2181,8 @@ MonoBehaviour:
   COG: {fileID: 0}
   WeightInLbs: 10
   Weight: 0
+  Engines:
+  - {fileID: 1698967893695878840}
 --- !u!1 &4883451440782953627
 GameObject:
   m_ObjectHideFlags: 0
