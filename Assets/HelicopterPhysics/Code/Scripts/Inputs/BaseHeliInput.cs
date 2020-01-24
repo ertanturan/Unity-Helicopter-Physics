@@ -27,22 +27,29 @@ namespace HelicopterPhysics.Inputs
         }
         public float Vertical
         {
-            get { return _Vertical; }
+            get { return _vertical; }
         }
         public float Horizontal
         {
-            get { return _Horizontal; }
+            get { return _horizontal; }
         }
-
+        public float StickyThrottle
+        {
+            get
+            {
+                return _stickyThrottle;
+            }
+        }
 
         private Vector2 _cyclicInput = Vector2.zero;
         private float _pedalInput = 0f;
         private float _throttleInput = 0f;
         private float _collectiveInput = 0f;
+        private float _stickyThrottle = 0f;
 
 
-        private float _Vertical = 0f;
-        private float _Horizontal = 0f;
+        private float _vertical = 0f;
+        private float _horizontal = 0f;
 
         private void Update()
         {
@@ -51,14 +58,15 @@ namespace HelicopterPhysics.Inputs
 
         protected virtual void HandleInput()
         {
-            _Vertical = Input.GetAxis("Vertical");
-            _Horizontal = Input.GetAxis("Horizontal");
+            _vertical = Input.GetAxis("Vertical");
+            _horizontal = Input.GetAxis("Horizontal");
 
             HandleThrottle();
             HandleCollective();
             HandleCyclic();
             HandlePedal();
             ClampInputs();
+            HandleStickyThrottle();
         }
 
 
@@ -75,7 +83,12 @@ namespace HelicopterPhysics.Inputs
             CyclicInput = Vector2.ClampMagnitude(CyclicInput, 1);
             PedalInput = Mathf.Clamp(PedalInput, -1f, 1f);
         }
+        private void HandleStickyThrottle()
+        {
 
+            _stickyThrottle += ThrottleInput * Time.deltaTime;
+            _stickyThrottle = Mathf.Clamp01(_stickyThrottle);
+        }
     }
 }
 
