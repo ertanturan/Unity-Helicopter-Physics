@@ -181,6 +181,48 @@ MonoBehaviour:
   MaxHP: 140
   MaxRPM: 2700
   PowerDelay: 2
+  PowerCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.46820483
+      value: 0.18560848
+      inSlope: 2.1931832
+      outSlope: 2.1931832
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.07172268
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.644128
+      value: 0.8501914
+      inSlope: 2.324776
+      outSlope: 2.324776
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.10410614
+    - serializedVersion: 3
+      time: 1.0153198
+      value: 0.92216873
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &665464726
 GameObject:
   m_ObjectHideFlags: 0

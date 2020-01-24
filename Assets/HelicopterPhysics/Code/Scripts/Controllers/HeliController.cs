@@ -33,6 +33,7 @@ namespace HelicopterPhysics.Gameplay
             for (int i = 0; i < Engines.Count; i++)
             {
                 Engines[i].UpdateEngine(_inputController.CurrentInput.ThrottleInput);
+                float finalPower = Engines[i].CurrentHP;
             }
         }
 

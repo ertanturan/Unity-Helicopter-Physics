@@ -7,7 +7,8 @@ namespace HelicopterPhysics.Physics
         public float MaxHP = 140f;
         public float MaxRPM = 2700f;
         public float PowerDelay = 2f;
-
+        public AnimationCurve PowerCurve =
+            new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
 
         private float _currentHp;
         public float CurrentHP
@@ -30,10 +31,10 @@ namespace HelicopterPhysics.Physics
         {
 
             //Calculate horsepower 
-            float targetHP = throttleInput * MaxHP;
+            float targetHP = PowerCurve.Evaluate(throttleInput) * MaxHP;
             _currentHp = Mathf.Lerp(_currentHp, targetHP, Time.deltaTime * PowerDelay);
             //calculate RPM
-            float targetRPM = throttleInput * MaxRPM;
+            float targetRPM = PowerCurve.Evaluate(throttleInput) * MaxRPM;
             _currenRPM = Mathf.Lerp(_currenRPM, targetRPM, Time.deltaTime * PowerDelay);
         }
 
