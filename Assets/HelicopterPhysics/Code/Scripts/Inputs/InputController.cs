@@ -15,6 +15,12 @@ namespace HelicopterPhysics.Inputs
 
         private List<BaseHeliInput> _inputs = new List<BaseHeliInput>();
 
+        private BaseHeliInput _currentInput;
+        public BaseHeliInput CurrentInput
+        {
+            get { return _currentInput; }
+        }
+
         private void Awake()
         {
             _inputs = GetComponents<BaseHeliInput>().ToList();
@@ -31,14 +37,17 @@ namespace HelicopterPhysics.Inputs
             {
                 case InputType.PC:
                     _pcController.enabled = true;
+                    _currentInput = _pcController;
                     break;
 
                 case InputType.XBOX:
                     _xboxController.enabled = true;
+                    _currentInput = _xboxController;
                     break;
 
                 default:
                     _pcController.enabled = true;
+                    _currentInput = _pcController;
                     break;
             }
         }

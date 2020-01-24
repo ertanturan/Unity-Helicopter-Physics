@@ -29,7 +29,7 @@ namespace HelicopterPhysics.Physics
         public void UpdateEngine(float throttleInput)
         {
 
-
+            //Debug.Log("Engine being updated with the throttle value : " + throttleInput);
 
         }
 

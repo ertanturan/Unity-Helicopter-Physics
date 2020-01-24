@@ -30,7 +30,10 @@ namespace HelicopterPhysics.Gameplay
 
         protected virtual void HandleEngines()
         {
-
+            for (int i = 0; i < Engines.Count; i++)
+            {
+                Engines[i].UpdateEngine(_inputController.CurrentInput.ThrottleInput);
+            }
         }
 
         protected virtual void HandleChracteristics()
