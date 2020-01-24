@@ -7,6 +7,7 @@ namespace HelicopterPhysics.Gameplay
     [RequireComponent(typeof(InputController))]
     public class HeliController : HelicopterBaseRigidbodyController
     {
+        [Header("Helicopter Properties")]
         private InputController _inputController;
 
         protected override void Awake()
