@@ -1,5 +1,5 @@
 ﻿using HelicopterPhysics.Inputs;
-using HelicopterPhysics.Mechanics;
+using HelicopterPhysics.Mechanics.Rotors;
 using HelicopterPhysics.Physics;
 using System.Collections.Generic;
 using System.Linq;

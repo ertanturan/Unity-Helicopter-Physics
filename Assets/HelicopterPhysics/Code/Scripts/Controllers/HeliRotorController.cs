@@ -1,7 +1,7 @@
 ﻿using HelicopterPhysics.Inputs;
 using UnityEngine;
 
-namespace HelicopterPhysics.Mechanics
+namespace HelicopterPhysics.Mechanics.Rotors
 {
     public class HeliRotorController : MonoBehaviour
     {
