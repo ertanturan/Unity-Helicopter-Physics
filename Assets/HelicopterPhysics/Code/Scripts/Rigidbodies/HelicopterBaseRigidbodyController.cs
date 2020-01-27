@@ -6,6 +6,8 @@ namespace HelicopterPhysics.Physics
     public class HelicopterBaseRigidbodyController : MonoBehaviour
     {
 
+
+
         public Transform COG;
         protected Rigidbody Rb;
 
@@ -20,6 +22,8 @@ namespace HelicopterPhysics.Physics
         protected virtual void Awake()
         {
             Rb = GetComponent<Rigidbody>();
+
+
         }
 
         protected virtual void Start()

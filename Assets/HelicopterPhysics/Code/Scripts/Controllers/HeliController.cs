@@ -1,4 +1,5 @@
-﻿using HelicopterPhysics.Inputs;
+﻿using HelicopterPhysics.Characteristics;
+using HelicopterPhysics.Inputs;
 using HelicopterPhysics.Mechanics.Rotors;
 using HelicopterPhysics.Physics;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace HelicopterPhysics.Gameplay
 {
-    [RequireComponent(typeof(InputController))]
+    [RequireComponent(typeof(InputController), typeof(HelicopterCharacteristics))]
     public class HeliController : HelicopterBaseRigidbodyController
     {
         [Header("Helicopter Properties")]
@@ -15,6 +16,7 @@ namespace HelicopterPhysics.Gameplay
         private List<HeliEngine> _engines = new List<HeliEngine>();
         [Header("Helicopter Rotors")]
         private HeliRotorController _rotorController;
+        private HelicopterCharacteristics _helicopterCharacteristics;
 
         protected override void Awake()
         {
@@ -22,6 +24,7 @@ namespace HelicopterPhysics.Gameplay
             _inputController = GetComponent<InputController>();
             _rotorController = GetComponentInChildren<HeliRotorController>();
             _engines = GetComponentsInChildren<HeliEngine>().ToList();
+            _helicopterCharacteristics = GetComponent<HelicopterCharacteristics>();
         }
 
         protected override void HandlePhysics()
@@ -46,7 +49,7 @@ namespace HelicopterPhysics.Gameplay
 
         protected virtual void HandleChracteristics()
         {
-
+            _helicopterCharacteristics.HandleCharacteristics();
         }
 
 

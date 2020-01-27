@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 317473588}
   - component: {fileID: 317473589}
   - component: {fileID: 317473590}
+  - component: {fileID: 2117329969}
   m_Layer: 0
   m_Name: R22_Helicopter_V2
   m_TagString: Untagged
@@ -786,6 +787,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b2ada5a873d9d14e9fdc7934860c0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2117329969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603179565206690564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f625e6aea90551a43aaf3fc192385b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1603179565206690566
@@ -3003,7 +3016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlurGeo: {fileID: 993503199}
-  MaxDPS: 5400
+  MaxDPS: 2700
   BlurMat: {fileID: 2100000, guid: b4773d262a259d745832ae23827530ff, type: 2}
   Blades:
   - {fileID: 1603179565206690590}
@@ -3212,7 +3225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlurGeo: {fileID: 62106881}
-  MaxDPS: 5400
+  MaxDPS: 2700
   BlurMat: {fileID: 2100000, guid: 7107586acaaa1684882bebd97b029778, type: 2}
   Blades:
   - {fileID: 1603179565206690584}

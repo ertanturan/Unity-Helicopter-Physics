@@ -35,7 +35,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
                 BlurMat.SetTexture("_MainTex", BlurTextures[blurTexID]);
             }
 
-            if (blurTexID > 2 && Blades.Count > 0)
+            if (blurTexID > 1 && Blades.Count > 0)
             {
                 HandleGeo(false);
             }
