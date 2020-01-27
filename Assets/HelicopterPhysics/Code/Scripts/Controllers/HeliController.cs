@@ -49,7 +49,10 @@ namespace HelicopterPhysics.Gameplay
 
         protected virtual void HandleChracteristics()
         {
-            _helicopterCharacteristics.HandleCharacteristics();
+            if (_helicopterCharacteristics)
+            {
+                _helicopterCharacteristics.HandleCharacteristics();
+            }
         }
 
 
