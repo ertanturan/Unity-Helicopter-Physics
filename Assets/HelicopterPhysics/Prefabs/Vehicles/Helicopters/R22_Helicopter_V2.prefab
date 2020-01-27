@@ -316,28 +316,10 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.46820483
-      value: 0.18560848
-      inSlope: 2.1931832
-      outSlope: 2.1931832
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.07172268
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.644128
-      value: 0.8501914
-      inSlope: 2.324776
-      outSlope: 2.324776
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.10410614
-    - serializedVersion: 3
-      time: 1.0153198
-      value: 0.92216873
-      inSlope: 0
-      outSlope: 0
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -3124,3 +3106,19 @@ MonoBehaviour:
   LeftRotor: {fileID: 1603179565206690584}
   RightRotor: {fileID: 1603179565206690576}
   BlurGeo: {fileID: 62106881}
+  MaxDPS: 5400
+  BlurMat: {fileID: 2100000, guid: 7107586acaaa1684882bebd97b029778, type: 2}
+  Blades:
+  - {fileID: 1603179565206690584}
+  - {fileID: 1603179565206690576}
+  BlurTextures:
+  - {fileID: 2800000, guid: fbbf55dfa1024e245badd246696f6cfa, type: 3}
+  - {fileID: 2800000, guid: c981b2c180599d644a9c432b09196a4f, type: 3}
+  - {fileID: 2800000, guid: bc755d4c6ef365945a15b26dbc14bce1, type: 3}
+  - {fileID: 2800000, guid: 8a5e73e576912554a9a6e0f2534c7567, type: 3}
+  - {fileID: 2800000, guid: 8a6f2a277c8266248b48ace30a57a3b8, type: 3}
+  - {fileID: 2800000, guid: 22296aaa2494fb64ca453e13c3ad4459, type: 3}
+  - {fileID: 2800000, guid: 6dc3e3449e0eed949a13e1e5bc062a26, type: 3}
+  - {fileID: 2800000, guid: ed3134fc98a404a41aed092e53506785, type: 3}
+  - {fileID: 2800000, guid: 7068257164979f64fa4e07d401476b4f, type: 3}
+  - {fileID: 2800000, guid: 52c95cced04f28141b39f5ea47ad81dc, type: 3}

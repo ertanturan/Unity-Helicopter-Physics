@@ -13,7 +13,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
             transform.Rotate(Vector3.up, dps);
 
             // pitch the blades up and down
-
+            //Debug.Log(dps);
             if (LeftRotor && RightRotor)
             {
                 LeftRotor.localRotation = Quaternion.Euler(

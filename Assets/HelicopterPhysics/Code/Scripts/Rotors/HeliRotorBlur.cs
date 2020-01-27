@@ -13,7 +13,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
         public GameObject RightRotor;
         public GameObject BlurGeo;
 
-        public float MaxDPS = 1000f;
+        public float MaxDPS = 100f;
 
         public Material BlurMat;
         [Space]
@@ -22,14 +22,29 @@ namespace HelicopterPhysics.Mechanics.Rotors
 
         public void UpdateRotor(float dps, InputController inputController)
         {
-
+            //Debug.Log(dps);
             float normalizedDPS = Mathf.InverseLerp(0f, MaxDPS, dps);
             int blurTexID = Mathf.FloorToInt(normalizedDPS * BlurTextures.Count);
             blurTexID = Mathf.Clamp(blurTexID, 0, BlurTextures.Count - 1);
-            Debug.Log(blurTexID);
+
             if (BlurMat && BlurTextures.Count > 0)
             {
                 BlurMat.SetTexture("_MainTex", BlurTextures[blurTexID]);
+            }
+
+            if (blurTexID > 2 && Blades.Count > 0)
+            {
+                foreach (GameObject blade in Blades)
+                {
+                    blade.SetActive(false);
+                }
+            }
+            else
+            {
+                foreach (GameObject blade in Blades)
+                {
+                    blade.SetActive(true);
+                }
             }
 
         }

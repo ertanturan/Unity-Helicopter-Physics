@@ -29,13 +29,13 @@ namespace HelicopterPhysics.Physics
 
         public void UpdateEngine(float throttleInput)
         {
-
             //Calculate horsepower 
             float targetHP = PowerCurve.Evaluate(throttleInput) * MaxHP;
             _currentHp = Mathf.Lerp(_currentHp, targetHP, Time.deltaTime * PowerDelay);
             //calculate RPM
             float targetRPM = PowerCurve.Evaluate(throttleInput) * MaxRPM;
             _currenRPM = Mathf.Lerp(_currenRPM, targetRPM, Time.deltaTime * PowerDelay);
+            //Debug.Log(_currenRPM);
         }
 
 
