@@ -9,8 +9,6 @@ namespace HelicopterPhysics.Mechanics.Rotors
     {
 
         [Header("Rotor Blur Properties")]
-        public GameObject LeftRotor;
-        public GameObject RightRotor;
         public GameObject BlurGeo;
 
         public float MaxDPS = 100f;
@@ -19,6 +17,11 @@ namespace HelicopterPhysics.Mechanics.Rotors
         [Space]
         public List<GameObject> Blades = new List<GameObject>();
         public List<Texture2D> BlurTextures = new List<Texture2D>();
+
+        private void Awake()
+        {
+            BlurGeo.GetComponent<Renderer>().material = BlurMat;
+        }
 
         public void UpdateRotor(float dps, InputController inputController)
         {
