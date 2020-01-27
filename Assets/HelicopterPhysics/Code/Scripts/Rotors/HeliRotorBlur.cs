@@ -34,20 +34,22 @@ namespace HelicopterPhysics.Mechanics.Rotors
 
             if (blurTexID > 2 && Blades.Count > 0)
             {
-                foreach (GameObject blade in Blades)
-                {
-                    blade.SetActive(false);
-                }
+                HandleGeo(false);
             }
             else
             {
-                foreach (GameObject blade in Blades)
-                {
-                    blade.SetActive(true);
-                }
+                HandleGeo(true);
             }
 
         }
 
+
+        private void HandleGeo(bool activeness)
+        {
+            foreach (GameObject blade in Blades)
+            {
+                blade.SetActive(activeness);
+            }
+        }
     }
 }
