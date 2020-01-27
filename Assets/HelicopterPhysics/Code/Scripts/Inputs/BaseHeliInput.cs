@@ -40,13 +40,17 @@ namespace HelicopterPhysics.Inputs
                 return _stickyThrottle;
             }
         }
+        public float StickyCollective
+        {
+            get { return _stickyCollective; }
+        }
 
         private Vector2 _cyclicInput = Vector2.zero;
         private float _pedalInput = 0f;
         private float _throttleInput = 0f;
         private float _collectiveInput = 0f;
         private float _stickyThrottle = 0f;
-
+        private float _stickyCollective = 0f;
 
         private float _vertical = 0f;
         private float _horizontal = 0f;
@@ -67,6 +71,7 @@ namespace HelicopterPhysics.Inputs
             HandlePedal();
             ClampInputs();
             HandleStickyThrottle();
+            HandleStickyCollective();
         }
 
 
@@ -88,6 +93,13 @@ namespace HelicopterPhysics.Inputs
 
             _stickyThrottle += ThrottleInput * Time.deltaTime;
             _stickyThrottle = Mathf.Clamp01(_stickyThrottle);
+        }
+
+        private void HandleStickyCollective()
+        {
+            _stickyCollective += _collectiveInput * Time.deltaTime;
+            _stickyCollective = Mathf.Clamp01(_stickyCollective);
+            Debug.Log(_stickyCollective);
         }
     }
 }

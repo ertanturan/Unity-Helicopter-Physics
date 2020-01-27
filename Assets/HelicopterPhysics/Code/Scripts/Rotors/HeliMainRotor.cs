@@ -17,9 +17,9 @@ namespace HelicopterPhysics.Mechanics.Rotors
             if (LeftRotor && RightRotor)
             {
                 LeftRotor.localRotation = Quaternion.Euler(
-                    inputController.CurrentInput.CollectiveInput * MaxPitch, 0f, 0f);
+                    inputController.CurrentInput.StickyCollective * MaxPitch, 0f, 0f);
                 RightRotor.localRotation = Quaternion.Euler(
-                    -inputController.CurrentInput.CollectiveInput * MaxPitch, 0f, 0f);
+                    -inputController.CurrentInput.StickyCollective * MaxPitch, 0f, 0f);
 
             }
 
