@@ -6,7 +6,6 @@ namespace HelicopterPhysics.Mechanics.Rotors
 
         public void UpdateRotor(float dps)
         {
-            Debug.Log("Updating main rotor");
             transform.Rotate(Vector3.up, dps);
         }
     }
