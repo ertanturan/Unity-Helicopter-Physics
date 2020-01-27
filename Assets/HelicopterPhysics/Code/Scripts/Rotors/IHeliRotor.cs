@@ -2,7 +2,7 @@
 {
     public interface IHeliRotor
     {
-
+        void UpdateRotor();
     }
 
 }

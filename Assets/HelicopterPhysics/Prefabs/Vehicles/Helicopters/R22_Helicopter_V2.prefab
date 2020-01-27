@@ -2811,6 +2811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9191374126611448930}
+  - component: {fileID: 1349447204}
   m_Layer: 0
   m_Name: Back Rotor - Mast
   m_TagString: Untagged
@@ -2835,6 +2836,18 @@ Transform:
   m_Father: {fileID: 84944744}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349447204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072675942571091786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab0dfc646ca4b941bd8178e7a71d02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6477170726094518252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,6 +2986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4857086361477568103}
+  - component: {fileID: 1661401651}
   m_Layer: 0
   m_Name: Main Rotor - Mast
   m_TagString: Untagged
@@ -2997,3 +3011,15 @@ Transform:
   m_Father: {fileID: 84944744}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661401651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9144267212640647293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3eae9a6611cdd41aa339642de53e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

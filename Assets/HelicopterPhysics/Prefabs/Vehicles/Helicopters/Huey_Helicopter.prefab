@@ -475,6 +475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4904210028771692138}
+  - component: {fileID: 1549913133}
   m_Layer: 0
   m_Name: Back Rotor
   m_TagString: Untagged
@@ -497,6 +498,18 @@ Transform:
   m_Father: {fileID: 943906963}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549913133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638329531164443289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab0dfc646ca4b941bd8178e7a71d02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1060977901923736353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,6 +2213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2757020308076884916}
+  - component: {fileID: 1768575697}
   m_Layer: 0
   m_Name: Main Rotor
   m_TagString: Untagged
@@ -2222,6 +2236,18 @@ Transform:
   m_Father: {fileID: 943906963}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768575697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068883125699765139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3eae9a6611cdd41aa339642de53e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4883451440574659255
 GameObject:
   m_ObjectHideFlags: 0
