@@ -52,6 +52,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
             foreach (GameObject blade in Blades)
             {
                 blade.SetActive(activeness);
+                BlurGeo.SetActive(!activeness);
             }
         }
     }

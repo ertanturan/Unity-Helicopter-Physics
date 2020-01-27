@@ -91,7 +91,7 @@ namespace HelicopterPhysics.Inputs
         private void HandleStickyThrottle()
         {
 
-            _stickyThrottle += ThrottleInput * (Time.deltaTime / 100);
+            _stickyThrottle += ThrottleInput * (Time.deltaTime / 50);
             _stickyThrottle = Mathf.Clamp01(_stickyThrottle);
         }
 

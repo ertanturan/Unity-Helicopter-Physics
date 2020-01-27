@@ -16,10 +16,16 @@ namespace HelicopterPhysics.Physics
             get { return _currentHp; }
         }
 
-        private float _currenRPM;
+        private float _currentRPM;
         public float CurrentRPM
         {
-            get { return _currenRPM; }
+            get { return _currentRPM; }
+        }
+
+        private float _normalizedRPM;
+        public float NormalizedRPM
+        {
+            get { return _normalizedRPM; }
         }
 
         private void Start()
@@ -34,7 +40,8 @@ namespace HelicopterPhysics.Physics
             _currentHp = Mathf.Lerp(_currentHp, targetHP, Time.deltaTime * PowerDelay);
             //calculate RPM
             float targetRPM = PowerCurve.Evaluate(throttleInput) * MaxRPM;
-            _currenRPM = Mathf.Lerp(_currenRPM, targetRPM, Time.deltaTime * PowerDelay);
+            _currentRPM = Mathf.Lerp(_currentRPM, targetRPM, Time.deltaTime * PowerDelay);
+            _normalizedRPM = Mathf.InverseLerp(0f, MaxRPM, _currentRPM);
             //Debug.Log(_currenRPM);
         }
 

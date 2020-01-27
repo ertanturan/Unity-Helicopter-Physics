@@ -18,6 +18,11 @@ namespace HelicopterPhysics.Gameplay
         private HeliRotorController _rotorController;
         private HelicopterCharacteristics _helicopterCharacteristics;
 
+        public List<HeliEngine> Engines
+        {
+            get { return _engines; }
+        }
+
         protected override void Awake()
         {
             base.Awake();
@@ -51,7 +56,7 @@ namespace HelicopterPhysics.Gameplay
         {
             if (_helicopterCharacteristics)
             {
-                _helicopterCharacteristics.HandleCharacteristics();
+                _helicopterCharacteristics.HandleCharacteristics(Rb, _inputController);
             }
         }
 
