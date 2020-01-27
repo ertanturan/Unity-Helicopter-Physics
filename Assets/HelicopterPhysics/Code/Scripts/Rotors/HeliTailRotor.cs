@@ -9,6 +9,16 @@ namespace HelicopterPhysics.Mechanics.Rotors
         {
             //base.UpdateRotor(dps, inputController);
             transform.Rotate(Vector3.right, dps * rotationSpeedModifier);
+
+
+            if (LeftRotor && RightRotor)
+            {
+                LeftRotor.localRotation = Quaternion.Euler(0f,
+                    inputController.CurrentInput.PedalInput * MaxPitch, 0f);
+                RightRotor.localRotation = Quaternion.Euler(0f,
+                    inputController.CurrentInput.PedalInput * MaxPitch, 0f);
+
+            }
         }
     }
 }

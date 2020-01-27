@@ -2848,6 +2848,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab0dfc646ca4b941bd8178e7a71d02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftRotor: {fileID: 1603179565206259582}
+  RightRotor: {fileID: 1603179565206259574}
+  MaxPitch: 45
   rotationSpeedModifier: 1.5
 --- !u!1 &6477170726094518252
 GameObject:
