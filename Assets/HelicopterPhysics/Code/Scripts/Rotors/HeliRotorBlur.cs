@@ -11,7 +11,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
         [Header("Rotor Blur Properties")]
         public GameObject BlurGeo;
 
-        public float MaxDPS = 100f;
+        public float MaxDPS = 5400f;
 
         public Material BlurMat;
         [Space]

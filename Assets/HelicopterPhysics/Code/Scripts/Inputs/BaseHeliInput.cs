@@ -99,7 +99,6 @@ namespace HelicopterPhysics.Inputs
         {
             _stickyCollective += _collectiveInput * Time.deltaTime;
             _stickyCollective = Mathf.Clamp01(_stickyCollective);
-            Debug.Log(_stickyCollective);
         }
     }
 }

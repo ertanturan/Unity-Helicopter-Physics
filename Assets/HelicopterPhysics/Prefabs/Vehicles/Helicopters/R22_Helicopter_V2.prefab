@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlurGeo: {fileID: 993503199}
-  MaxDPS: 100
+  MaxDPS: 5400
   BlurMat: {fileID: 2100000, guid: b4773d262a259d745832ae23827530ff, type: 2}
   Blades:
   - {fileID: 1603179565206690590}
