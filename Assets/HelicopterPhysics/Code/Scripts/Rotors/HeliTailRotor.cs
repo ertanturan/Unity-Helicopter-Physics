@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using HelicopterPhysics.Inputs;
+using UnityEngine;
 namespace HelicopterPhysics.Mechanics.Rotors
 {
-    public class HeliTailRotor : MonoBehaviour, IHeliRotor
+    public class HeliTailRotor : BaseRotor
     {
         public float rotationSpeedModifier = 1.5f;
-        public void UpdateRotor(float dps)
+        public override void UpdateRotor(float dps, InputController inputController)
         {
+            //base.UpdateRotor(dps, inputController);
             transform.Rotate(Vector3.right, dps * rotationSpeedModifier);
         }
     }

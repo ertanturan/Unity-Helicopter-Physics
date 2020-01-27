@@ -19,7 +19,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
             float dps = (currentRPMs * 360f) / 60f;
             for (int i = 0; i < _rotors.Count; i++)
             {
-                _rotors[i].UpdateRotor(dps);
+                _rotors[i].UpdateRotor(dps, inputController);
             }
         }
     }

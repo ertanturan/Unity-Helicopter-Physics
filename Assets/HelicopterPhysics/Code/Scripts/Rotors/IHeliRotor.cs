@@ -1,8 +1,9 @@
-﻿namespace HelicopterPhysics.Mechanics.Rotors
+﻿using HelicopterPhysics.Inputs;
+namespace HelicopterPhysics.Mechanics.Rotors
 {
     public interface IHeliRotor
     {
-        void UpdateRotor(float dps);
+        void UpdateRotor(float dps, InputController inputController);
     }
 
 }
