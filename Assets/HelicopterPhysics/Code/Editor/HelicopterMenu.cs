@@ -16,7 +16,7 @@ namespace HelicopterPhysics.Editorial
 
             //COG : Center of Gravity
             //Create the COG object for the helicopter
-            GameObject curCOG = new GameObject("COG - " + currentHeli.gameObject.name);
+            GameObject curCOG = new GameObject("COG");
             curCOG.transform.SetParent(currentHeli.transform);
 
             HeliController currentController = currentHeli.GetComponent<HeliController>();
@@ -27,10 +27,12 @@ namespace HelicopterPhysics.Editorial
             GameObject audioGroup = new GameObject("Audio Group");
             GameObject graphicsGroup = new GameObject("Graphics Group");
             GameObject collisionGroup = new GameObject("Collision Group");
+            GameObject rotorsGroup = new GameObject("Rotors Group");
 
             audioGroup.transform.SetParent(currentHeli.transform);
             graphicsGroup.transform.SetParent(currentHeli.transform);
             collisionGroup.transform.SetParent(currentHeli.transform);
+            rotorsGroup.transform.SetParent(currentHeli.transform);
 
 
         }
