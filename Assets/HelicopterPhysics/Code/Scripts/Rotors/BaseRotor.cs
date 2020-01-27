@@ -13,14 +13,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
 
         public virtual void UpdateRotor(float dps, InputController inputController)
         {
-            if (LeftRotor && RightRotor)
-            {
-                LeftRotor.localRotation = Quaternion.Euler(
-                    inputController.CurrentInput.CollectiveInput * MaxPitch, 0f, 0f);
-                RightRotor.localRotation = Quaternion.Euler(
-                    -inputController.CurrentInput.CollectiveInput * MaxPitch, 0f, 0f);
-
-            }
+         
         }
     }
 }
