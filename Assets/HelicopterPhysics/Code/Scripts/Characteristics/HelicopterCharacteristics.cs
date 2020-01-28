@@ -18,6 +18,9 @@ namespace HelicopterPhysics.Characteristics
         [Header("Cyclic Properties")]
         public float CyclicForce = 2f;
 
+        [Space]
+        [Header("Auto Level Properties")]
+        public float AutoLevelForce = 2f;
 
         private Vector3 _flatForward;
         private float _forwardDot;
@@ -36,7 +39,7 @@ namespace HelicopterPhysics.Characteristics
             HandlePedals(rb, input);
 
             CalculateAngles();
-            AutoLevel();
+            AutoLevel(rb);
         }
 
         protected virtual void HandleLift(Rigidbody rb, InputController input)
@@ -72,7 +75,6 @@ namespace HelicopterPhysics.Characteristics
             //calculate flat forward
             _flatForward = transform.forward;
             _flatForward.y = 0f;
-
             _flatForward = _flatForward.normalized;
 
             Debug.DrawRay(transform.position, _flatForward, Color.blue);
@@ -80,18 +82,30 @@ namespace HelicopterPhysics.Characteristics
             //calculate flat right
             _flatRight = transform.right;
             _flatRight.y = 0f;
-
             _flatRight = _flatRight.normalized;
+
             Debug.DrawRay(transform.position, _flatRight, Color.red);
 
             // calculate angles (dot products)
             _forwardDot = Vector3.Dot(transform.up, _flatForward);
+            _rightDot = Vector3.Dot(transform.up, _flatRight);
+
+            //Debug.Log(string.Format("Fwd : {0} - Right : {1} ", _forwardDot.ToString("0.0")
+            //    , _rightDot.ToString("0.0")));
+
 
         }
 
-        private void AutoLevel()
+        private void AutoLevel(Rigidbody rb)
         {
+            //auto correct the helicopter
 
+            float rightForce = -_forwardDot * AutoLevelForce;
+            float forwardForce = _rightDot * AutoLevelForce;
+
+
+            rb.AddRelativeTorque(Vector3.right * rightForce, ForceMode.Acceleration);
+            rb.AddRelativeTorque(Vector3.forward * forwardForce, ForceMode.Acceleration);
         }
 
 
