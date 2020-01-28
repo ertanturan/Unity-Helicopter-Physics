@@ -85,13 +85,13 @@ namespace HelicopterPhysics.Inputs
         {
             ThrottleInput = Mathf.Clamp(ThrottleInput, -1f, 1f);
             CollectiveInput = Mathf.Clamp(CollectiveInput, -1f, 1f);
-            CyclicInput = Vector2.ClampMagnitude(CyclicInput, 1);
+            _cyclicInput = Vector2.ClampMagnitude(_cyclicInput, 1);
             PedalInput = Mathf.Clamp(PedalInput, -1f, 1f);
         }
         private void HandleStickyThrottle()
         {
 
-            _stickyThrottle += ThrottleInput * (Time.deltaTime / 50);
+            _stickyThrottle += ThrottleInput * (Time.deltaTime / 10);
             _stickyThrottle = Mathf.Clamp01(_stickyThrottle);
         }
 
