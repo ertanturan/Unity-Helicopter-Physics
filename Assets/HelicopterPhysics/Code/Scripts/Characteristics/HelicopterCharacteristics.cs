@@ -19,8 +19,10 @@ namespace HelicopterPhysics.Characteristics
         public float CyclicForce = 2f;
 
 
-        private Vector3 FlatForward;
-        private Vector3 FlatRight;
+        private Vector3 _flatForward;
+        private float _forwardDot;
+        private Vector3 _flatRight;
+        private float _rightDot;
 
         protected virtual void Awake()
         {
@@ -68,22 +70,22 @@ namespace HelicopterPhysics.Characteristics
         private void CalculateAngles()
         {
             //calculate flat forward
-            FlatForward = transform.forward;
-            FlatForward.y = 0f;
+            _flatForward = transform.forward;
+            _flatForward.y = 0f;
 
-            FlatForward = FlatForward.normalized;
+            _flatForward = _flatForward.normalized;
 
-            Debug.DrawRay(transform.position, FlatForward, Color.blue);
+            Debug.DrawRay(transform.position, _flatForward, Color.blue);
 
             //calculate flat right
-            FlatRight = transform.right;
-            FlatRight.y = 0f;
+            _flatRight = transform.right;
+            _flatRight.y = 0f;
 
-            FlatRight = FlatRight.normalized;
-            Debug.DrawRay(transform.position, FlatRight, Color.red);
+            _flatRight = _flatRight.normalized;
+            Debug.DrawRay(transform.position, _flatRight, Color.red);
 
             // calculate angles (dot products)
-
+            _forwardDot = Vector3.Dot(transform.up, _flatForward);
 
         }
 
