@@ -17,6 +17,7 @@ namespace HelicopterPhysics.Characteristics
         [Space]
         [Header("Cyclic Properties")]
         public float CyclicForce = 2f;
+        public float CyclicForceMultiplier = 1000f;
 
         [Space]
         [Header("Auto Level Properties")]
@@ -61,6 +62,17 @@ namespace HelicopterPhysics.Characteristics
 
             float cyclicYForce = input.CurrentInput.CyclicInput.y * CyclicForce;
             rb.AddRelativeTorque(Vector3.right * cyclicYForce, ForceMode.Acceleration);
+
+            //apply force based off of the dot product values
+
+            Vector3 forwardVector = _flatForward * _forwardDot;
+            Vector3 rightVector = _flatRight * _rightDot;
+            Vector3 finalCyclicDir = forwardVector + rightVector;
+            finalCyclicDir = Vector3.ClampMagnitude(finalCyclicDir, 1f) *
+                CyclicForce * CyclicForceMultiplier;
+
+            Debug.DrawRay(transform.position, finalCyclicDir, Color.green);
+            rb.AddForce(finalCyclicDir, ForceMode.Force);
         }
 
         protected virtual void HandlePedals(Rigidbody rb, InputController input)
