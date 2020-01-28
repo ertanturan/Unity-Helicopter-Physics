@@ -18,6 +18,10 @@ namespace HelicopterPhysics.Characteristics
         [Header("Cyclic Properties")]
         public float CyclicForce = 2f;
 
+
+        private Vector3 FlatForward;
+        private Vector3 FlatRight;
+
         protected virtual void Awake()
         {
             _heliControl = GetComponent<HeliController>();
@@ -28,6 +32,9 @@ namespace HelicopterPhysics.Characteristics
             HandleLift(rb, input);
             HandleCyclic(rb, input);
             HandlePedals(rb, input);
+
+            CalculateAngles();
+            AutoLevel();
         }
 
         protected virtual void HandleLift(Rigidbody rb, InputController input)
@@ -56,6 +63,33 @@ namespace HelicopterPhysics.Characteristics
             //handle tail rotors
 
             rb.AddTorque(Vector3.up * input.CurrentInput.PedalInput * TailForce, ForceMode.Acceleration);
+        }
+
+        private void CalculateAngles()
+        {
+            //calculate flat forward
+            FlatForward = transform.forward;
+            FlatForward.y = 0f;
+
+            FlatForward = FlatForward.normalized;
+
+            Debug.DrawRay(transform.position, FlatForward, Color.blue);
+
+            //calculate flat right
+            FlatRight = transform.right;
+            FlatRight.y = 0f;
+
+            FlatRight = FlatRight.normalized;
+            Debug.DrawRay(transform.position, FlatRight, Color.red);
+
+            // calculate angles (dot products)
+
+
+        }
+
+        private void AutoLevel()
+        {
+
         }
 
 
