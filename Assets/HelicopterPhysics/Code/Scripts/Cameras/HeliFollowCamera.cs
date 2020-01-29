@@ -1,18 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class HeliFollowCamera : MonoBehaviour
+namespace HelicopterPhysics.Cameras
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public class HeliFollowCamera : MonoBehaviour, IHeliCamera
     {
-        
+        public void HandleCamera()
+        {
+
+        }
     }
 }
