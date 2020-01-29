@@ -2255,6 +2255,7 @@ MonoBehaviour:
   LeftRotor: {fileID: 0}
   RightRotor: {fileID: 0}
   MaxPitch: 35
+  MinRotationRPM: 40
 --- !u!1 &4883451440574659255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,8 +2363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb05a003f7d7e6e4d9ac7091e6c5e2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  COG: {fileID: 0}
-  WeightInLbs: 10
+  COG: {fileID: 4883451441808934645}
+  WeightInLbs: 1200
   Weight: 0
 --- !u!114 &73168356
 MonoBehaviour:
@@ -2377,6 +2378,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f625e6aea90551a43aaf3fc192385b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxLiftForce: 100
+  TailForce: 2
+  CyclicForce: 2
+  CyclicForceMultiplier: 1000
+  AutoLevelForce: 2
 --- !u!1 &4883451440782953627
 GameObject:
   m_ObjectHideFlags: 0

@@ -730,8 +730,8 @@ Rigidbody:
   m_GameObject: {fileID: 1603179565206690564}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   COG: {fileID: 6477170726094518253}
-  WeightInLbs: 10
+  WeightInLbs: 1200
   Weight: 0
 --- !u!114 &317473588
 MonoBehaviour:
@@ -802,6 +802,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxLiftForce: 100
+  TailForce: 2
+  CyclicForce: 2
+  CyclicForceMultiplier: 1000
+  AutoLevelForce: 4
 --- !u!1 &1603179565206690566
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,6 +3217,7 @@ MonoBehaviour:
   LeftRotor: {fileID: 1603179565206259576}
   RightRotor: {fileID: 1603179565206259568}
   MaxPitch: 35
+  MinRotationRPM: 40
 --- !u!114 &6477170726584935621
 MonoBehaviour:
   m_ObjectHideFlags: 0

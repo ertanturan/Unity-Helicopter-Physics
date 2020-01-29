@@ -548,6 +548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1460798170}
+  Height: 2
+  Distance: 2
 --- !u!1 &1668560606
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,14 +718,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 317473587, guid: f889e016acfa54545adb5820942f0c82, type: 3}
-      propertyPath: WeightInLbs
-      value: 1200
-      objectReference: {fileID: 0}
-    - target: {fileID: 2117329969, guid: f889e016acfa54545adb5820942f0c82, type: 3}
-      propertyPath: AutoLevelForce
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1603179565206259556, guid: f889e016acfa54545adb5820942f0c82,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -783,21 +777,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: R22_Helicopter_V2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5754521871935094725, guid: f889e016acfa54545adb5820942f0c82,
-        type: 3}
-      propertyPath: m_Drag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5754521871935094725, guid: f889e016acfa54545adb5820942f0c82,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5754521871935094725, guid: f889e016acfa54545adb5820942f0c82,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f889e016acfa54545adb5820942f0c82, type: 3}
