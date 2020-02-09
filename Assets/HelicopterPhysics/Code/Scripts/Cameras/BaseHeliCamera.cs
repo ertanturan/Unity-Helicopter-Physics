@@ -4,7 +4,7 @@ namespace HelicopterPhysics.Cameras
 {
     public class BaseHeliCamera : MonoBehaviour, IHeliCamera
     {
-
+        [Header("Base Camera Properties")]
         public Rigidbody Rb;
         public Transform LookatTarget;
         protected Vector3 CurrentVelocity = Vector3.zero;

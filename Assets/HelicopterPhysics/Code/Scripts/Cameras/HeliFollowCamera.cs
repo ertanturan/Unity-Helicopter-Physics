@@ -6,7 +6,7 @@ namespace HelicopterPhysics.Cameras
     public class HeliFollowCamera : BaseHeliCamera
     {
 
-        [Header("Camera Properties")]
+        [Header("Follow Camera Properties")]
         public float Height = 2f;
         public float Distance = 2f;
         public float CameraSpeed = 2f;
