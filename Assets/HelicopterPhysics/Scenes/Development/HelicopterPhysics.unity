@@ -571,8 +571,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b18307fdb01524eb63e00921c28876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rb: {fileID: 0}
-  LookatTarget: {fileID: 0}
+  Rb: {fileID: 1460798170}
+  LookatTarget: {fileID: 474825056}
+  Height: 2
+  MinDistance: 3
+  MaxDistance: 6
+  CatchUpModifier: 5
 --- !u!1 &1668560606
 GameObject:
   m_ObjectHideFlags: 0
