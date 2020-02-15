@@ -736,6 +736,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Huey_Helicopter
       objectReference: {fileID: 0}
+    - target: {fileID: 4883451440574659255, guid: 2c6156739156a854693d6316713e5631,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c6156739156a854693d6316713e5631, type: 3}
 --- !u!1001 &6477170726584935616
