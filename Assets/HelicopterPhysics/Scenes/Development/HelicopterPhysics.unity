@@ -1129,6 +1129,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621832296}
   m_CullTransparentMesh: 0
+--- !u!114 &651705418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 317473590, guid: f889e016acfa54545adb5820942f0c82,
+    type: 3}
+  m_PrefabInstance: {fileID: 6477170726584935616}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b2ada5a873d9d14e9fdc7934860c0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &723748015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +3241,7 @@ GameObject:
   - component: {fileID: 2043427940}
   - component: {fileID: 2043427942}
   - component: {fileID: 2043427943}
+  - component: {fileID: 2043427944}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3334,6 +3347,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &2043427944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043427938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5bc92c5fff6524f913e278f64692c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RawThrottle: {fileID: 493111211}
+  StickyThrottle: {fileID: 1743554239}
+  Collective: {fileID: 1227323007}
+  StickyCollective: {fileID: 1473168818}
+  Cyclic: {fileID: 1043284135}
+  Pedal: {fileID: 242330011}
+  Input: {fileID: 651705418}
 --- !u!1 &2098910759
 GameObject:
   m_ObjectHideFlags: 0
