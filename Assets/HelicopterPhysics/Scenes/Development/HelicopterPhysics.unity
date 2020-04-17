@@ -1440,6 +1440,16 @@ PrefabInstance:
       propertyPath: LookatTarget
       value: 
       objectReference: {fileID: 474825056}
+    - target: {fileID: 1784683121419966615, guid: 5b8c2fc4258177c458fb543bb85dd6a0,
+        type: 3}
+      propertyPath: Height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784683121419966615, guid: 5b8c2fc4258177c458fb543bb85dd6a0,
+        type: 3}
+      propertyPath: Distance
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8c2fc4258177c458fb543bb85dd6a0, type: 3}
 --- !u!1001 &6477170726584935616
