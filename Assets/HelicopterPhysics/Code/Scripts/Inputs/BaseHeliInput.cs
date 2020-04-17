@@ -62,9 +62,8 @@ namespace HelicopterPhysics.Inputs
 
         protected virtual void HandleInput()
         {
-            _vertical = Input.GetAxis("Vertical");
-            _horizontal = Input.GetAxis("Horizontal");
 
+            HandleVertHor();
             HandleThrottle();
             HandleCollective();
             HandleCyclic();
@@ -81,6 +80,11 @@ namespace HelicopterPhysics.Inputs
         protected virtual void HandleCollective() { }
         protected virtual void HandleCyclic() { }
 
+        protected virtual void HandleVertHor()
+        {
+            _vertical = Input.GetAxis("Vertical");
+            _horizontal = Input.GetAxis("Horizontal");
+        }
         private void ClampInputs()
         {
             ThrottleInput = Mathf.Clamp(ThrottleInput, -1f, 1f);
