@@ -11,6 +11,8 @@
 /[Mm]emoryCaptures/
 /[Aa]ssets/Stylized Nature Pack
 /[Aa]ssets/_TerrainAutoUpgrade
+/[Aa]ssets/MapMagic
+
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
