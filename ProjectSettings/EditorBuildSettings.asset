@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/HelicopterPhysics/Scenes/Development/HelicopterPhysics.unity
+    guid: 45ddc7a4e33174c4fbdff4b4f6380a47
   m_configObjects: {}
