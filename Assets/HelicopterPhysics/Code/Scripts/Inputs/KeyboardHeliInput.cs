@@ -32,6 +32,12 @@ namespace HelicopterPhysics.Inputs
             CyclicInput = temp;
         }
 
+        //protected override void HandleVertHor()
+        //{
+        // //use mouse to control helicopter
+        //    Vertical = Input.GetAxis("Mouse Y");
+        //    Horizontal = Input.GetAxis("Mouse X");
+        //}
     }
 
 }

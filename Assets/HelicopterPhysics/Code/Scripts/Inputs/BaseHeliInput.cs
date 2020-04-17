@@ -25,13 +25,17 @@ namespace HelicopterPhysics.Inputs
             get { return _pedalInput; }
             set { _pedalInput = value; }
         }
-        public float Vertical
+
+        protected float Vertical
         {
             get { return _vertical; }
+            set { _vertical = value; }
         }
-        public float Horizontal
+
+        protected float Horizontal
         {
             get { return _horizontal; }
+            set { _horizontal = value; }
         }
         public float StickyThrottle
         {
@@ -62,7 +66,6 @@ namespace HelicopterPhysics.Inputs
 
         protected virtual void HandleInput()
         {
-
             HandleVertHor();
             HandleThrottle();
             HandleCollective();
@@ -85,6 +88,7 @@ namespace HelicopterPhysics.Inputs
             _vertical = Input.GetAxis("Vertical");
             _horizontal = Input.GetAxis("Horizontal");
         }
+
         private void ClampInputs()
         {
             ThrottleInput = Mathf.Clamp(ThrottleInput, -1f, 1f);
