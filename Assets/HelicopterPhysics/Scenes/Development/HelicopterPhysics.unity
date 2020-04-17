@@ -573,7 +573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rb: {fileID: 1460798170}
   LookatTarget: {fileID: 474825056}
-  Height: 2
+  Height: 5
   MinDistance: 3
   MaxDistance: 6
   CatchUpModifier: 5

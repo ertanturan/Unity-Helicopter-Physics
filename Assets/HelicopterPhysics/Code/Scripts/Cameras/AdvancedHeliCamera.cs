@@ -33,6 +33,7 @@ namespace HelicopterPhysics.Cameras
             }
 
             TargetPos = Rb.position + dirToTarget + (Vector3.up * Height);
+            transform.position = TargetPos;
             transform.LookAt(LookatTarget);
         }
     }
