@@ -10,6 +10,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
 
         [Header("Rotor Blur Properties")]
         public GameObject BlurGeo;
+        public GameObject DoubleSideBlurGeo;
 
         public float MaxDPS = 5400f;
 
@@ -53,6 +54,7 @@ namespace HelicopterPhysics.Mechanics.Rotors
             {
                 blade.SetActive(activeness);
                 BlurGeo.SetActive(!activeness);
+                DoubleSideBlurGeo.SetActive(!activeness);
             }
         }
     }
