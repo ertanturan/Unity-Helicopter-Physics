@@ -9,6 +9,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Aa]ssets/Stylized Nature Pack
+/[Aa]ssets/_TerrainAutoUpgrade
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
