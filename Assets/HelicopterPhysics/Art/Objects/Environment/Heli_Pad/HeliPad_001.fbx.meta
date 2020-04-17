@@ -1,20 +1,23 @@
 fileFormatVersion: 2
-guid: c383091d39e540846a3658e8114e3c9b
+guid: 36fabade00656d74d902c176617a0aff
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: ufo_high
+    4300000: merge4
+    4300002: transform2
+    4300004: sop_autouv1
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: 35cbb0a91258d904f956118688e39ba8, type: 2}
+    second: {fileID: 2100000, guid: 0036acbcceff23d4fa023e2c2a74a13a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,6 +68,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -84,7 +89,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
